@@ -1,0 +1,52 @@
+@use 'sass:map';
+// Theme colors
+$primary: #123456;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// Color palette
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'error': $error,
+  'info': $info,
+  'blue': #1919e6,
+  'red': #e61919,
+  'green': #19e619,
+  'yellow': #e6e619,
+  'orange': #e6a619,
+  'purple': #7a19e6,
+  'pink': #e619a6,
+  'grey': #a6a6a6,
+  'black': #000000,
+  'white': #ffffff
+);
+
+// @debug map.get($colors, 'pink');
+// @debug map.keys($colors);
+// @debug map.values($colors);
+// @debug map.merge($colors, ('brown': #8b4513));
+// @debug map.remove($colors, 'pink');
+// @debug map.has-key($colors, 'pink');
+
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// Font
+$main-font: monospace;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size *.75;
+$font-size-lg: $base-font-size * 1.25;
+$font-size-xl: $base-font-size * 1.5;
+$font-size-xxl: $base-font-size * 2;
